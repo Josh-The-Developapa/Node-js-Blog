@@ -1,0 +1,20 @@
+<html>
+<head>
+        <title>Blog Tycoon|<%= title %></title>
+</head>
+<body>
+    <%- include('./partials/nav.ejs')  %>
+    <%- include('./partials/head.ejs')  %>
+    <%- include('./partials/footer.ejs')  %>
+    </body>
+    <div id="create-blogs content">
+        <form action="/blogs" method="POST">
+            <input type="text" id="title" placeholder="Blog Title" name="title"required>
+            <input type="text" id="snippet" placeholder="Blog snippet" name="snippet" required>
+            <textarea id="body" placeholder="Blog body" name="body" required></textarea>
+            <button id="btn">Submit</button>
+        </form>
+
+        <%- include('./partials/footer.ejs') %>
+</body>
+</html>
