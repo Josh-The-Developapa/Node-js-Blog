@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js"
 }
-  "author": "",
+  "author": "Joshua Mukisa",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",
