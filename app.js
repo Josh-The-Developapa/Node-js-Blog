@@ -17,7 +17,8 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
 app.use(morgan('dev'));
 
-app.listen(3000);
+const PORT = 3000;
+app.listen(PORT);
 
 app.get('/', (req, res) => {
     res.redirect('/blogs');
@@ -117,4 +118,4 @@ app.use((req, res) => {
     res.status(404).render('404', { title: '404'})
 });
 
-console.log("Server available at http://127.0.0.1:3000");
+console.log(`Server available on port ${PORT}`);
